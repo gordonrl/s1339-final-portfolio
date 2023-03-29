@@ -1,0 +1,6 @@
+/* make images right size */
+img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
