@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function gitClick() {
+            alert("Please Note: The University of Michigan Engineering Honor Code requires that class projects are made private on GitHub. Please email me at gordonrl@umich.edu if you would like to see these projects and I can contact the engineering department.");
+        }
+    </script>
     <title>Home</title>
 </head>
 <body>
-    <div class="skip"><a href="#homeMain" tabindex="0">Skip to Main Content</a></div>
+    <a class="skip" tabindex="0" href="#homeMain">Skip to Main Content</a>
 
     <header>
+        <button class="accordion">Home</button>
         <nav>
             <ul>
-                <li><a href="./index.html" tabindex="0">Home</a></li>
+                <li class="currPage"><a href="./index.html" tabindex="0">Home</a></li>
                 <li><a href="./aboutMe.html" tabindex="0">About Me</a></li>
                 <li><a href="./Projects.html" tabindex="0">Projects</a></li>
             </ul>
@@ -22,32 +28,31 @@
     </header>
 
     <main id="homeMain">
-    <!-- GENERAL IDEA: FOR HOME PAGE
-        USE FLEX: CENTER WILL BE NAME WITH LINKS TO GITHUB, RESUME, AND LINKEDIN BELOW IT THIS WILL BE SURROUNDED BY 8 OF THE NINE IMAGES AND THE NAV BAR WILL BE ON TOP THE NINTH IMAGE WILL BE A LARGER ONE THAT SPANS EVERY COLUMN-->
-        <h1>Gordon Lewis</h1>
-        <div>
+        <div class="homeBio">
+            <h1>Gordon Lewis</h1>
             <ul>
                 <li><a href="resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://github.com/gordonrl" target="_blank">GitHub</a></li>
+                <li id="gitLink" onclick="gitClick()"><a href="https://github.com/gordonrl" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/gordonrl302/" target="_blank">LinkedIn</a></li>
             </ul>
-            <p>Please Note: The University of Michigan Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf" target="_blank">Honor Code</a> requires that class projects are made private on GitHub. Please <a href=mailto:gordonrl@umich.edu>email me</a> if you would like to see these projects and I can contact the engineering department.</p>
         </div>
-    </main>
 
-    <img src="images/carp.JPG" alt="Smiling boy holding a massive carp">
-    <img src="images/coding.JPG" alt="Smiling boy with laptop on his lap. The laptop displays lines of code">
-    <img src="images/goofy.jpeg" alt="Smiling boy with jacket hood cinched over their head">
-    <img src="images/guitar.png" alt="Boy wearing a yellow hat looks at his hand to make a chord on his red guitar">
-    <img src="images/leadClimb.JPG" alt="Boy reaches towards camera while looking down 20 feet up a rock wall">
-    <img src="images/monty.jpeg" alt="Smiling boy holds large collie dog in his arms">
-    <img src="images/pantry.jpeg" alt="Five friends smiling for a selfie in a diner">
-    <img src="images/pilch.JPG" alt="A boy smiles into the camera while a tan-colored cat stands on his shoulder">
-    <img src="images/siblings.JPG" alt="Three people smile for a selfie in a car. Two are in the front seasts and one is in the back">
+        <img src="images/carp.JPG" alt="Smiling boy holding a massive carp">
+        <img src="images/coding.JPG" alt="Smiling boy with laptop on his lap. The laptop displays lines of code">
+        <img src="images/pantry.jpeg" alt="Five friends smiling for a selfie in a diner">
+        <img src="images/guitar.png" alt="Boy wearing a yellow hat looks at his hand to make a chord on his red guitar">
+        <img src="images/leadClimb.JPG" alt="Boy reaches towards camera while looking down 20 feet up a rock wall">
+        <img src="images/siblings.JPG" alt="Three people smile for a selfie in a car. Two are in the front seasts and one is in the back">
+        <img src="images/pilch.JPG" alt="A boy smiles into the camera while a tan-colored cat stands on his shoulder">
+        <img src="images/goofy.jpeg" alt="Smiling boy with jacket hood cinched over their head">
+        <img src="images/monty.jpeg" alt="Smiling boy holds large collie dog in his arms">
+
+    </main>
 
     <footer class="contact">
         <p>Gordon Lewis, <a href=mailto:gordonrl@umich.edu>Email Me</a></p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

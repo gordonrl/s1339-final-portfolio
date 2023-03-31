@@ -4,51 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Projects</title>
 </head>
 <body>
-    <div class="skip"><a href="#projectsMain" tabindex="0">Skip to Main Content</a></div>
+    <a class="skip" tabindex="0" href="#projectsMain">Skip to Main Content</a>
 
     <header>
+        <button class="accordion">Projects</button>
         <nav>
             <ul>
                 <li><a href="./index.html" tabindex="0">Home</a></li>
                 <li><a href="./aboutMe.html" tabindex="0">About Me</a></li>
-                <li><a href="./Projects.html" tabindex="0">Projects</a></li>
+                <li class="currPage"><a href="./Projects.html" tabindex="0">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="projectsMain">
-        <div>
+        <div class="projHeader">
             <h1>Projects</h1>
             <a href="https://github.com/gordonrl" target="_blank">GitHub</a>
-            <p>Please Note: The University of Michigan Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf" target="_blank">Honor Code</a> requires that class projects are made private on GitHub. Please <a href=mailto:gordonrl@umich.edu>email me</a> if you would like to see these projects and I can contact the engineering department.</p>
+            <p>Please Note: The University of Michigan Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf" target="_blank">Honor Code</a> requires that class projects are made private on GitHub. Please <a href=mailto:gordonrl@umich.edu>email me</a> if you would like to see these projects and I can contact the engineering department. An asterix (*) denotes a private project.</p>
         </div>
         
-        <ul>
+        <ul class="projectsList">
             <li>
-                <h2><a href="https://github.com/gordonrl/theory-helper" target="_blank">Theory Helper</a></h2>
+                <h2>Theory Helper</h2>
                 <p>Desktop application that explains music theory via user-inputted chords.</p>
             </li>
 
             <li>
-                <h2>Machine Learning (GitHub link currently unavailable)</h2>
+                <h2>Machine Learning*</h2>
                 <p>Developed ML model to predict the category/topic of student questions from an online forum.</p>
             </li>
 
             <li>
-                <h2><a href="https://github.com/gordonrl/p2b-priority-queues" target="_blank">Stock Market Simulator*</a></h2>
+                <h2>Stock Market Simulator*</h2>
                 <p> Reskinned simulation of buying and selling stocks including a streaming algorithm to determine optimal buying and selling points.</p>
             </li>
 
             <li>
-               <h2>Computer Vision (GitHub link currently unavailable)</h2>
+               <h2>Computer Vision*</h2>
                <p>Intelligently resized images to avoid distortion via a seam-carving algorithm.</p>
             </li>
 
             <li>
-                <h2><a href="https://github.com/gordonrl/p3-silly" target="_blank">Relational Database</a></h2>
+                <h2>Relational Database*</h2>
                 <p>Simplified relational database able to respond to Structured Query Language commands.</p>
             </li>
         </ul>
@@ -57,5 +60,7 @@
     <footer class="contact">
         <p>Gordon Lewis, <a href=mailto:gordonrl@umich.edu>Contact Me</a></p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
