@@ -1,7 +1,16 @@
+body {
+    background-color: #024d02;
+}
 
 footer {
-    text-align: center;
+    display: inline-block;
     margin: 20px;
+}
+
+footer p {
+    border: 2px solid #b8860b;
+    padding: 5px;
+    background-color: #fffff0;
 }
 
 a {
@@ -17,6 +26,11 @@ li {
 
 .homeBio {
     text-align: center;
+    background-color: #fffff0;
+    padding-bottom: 20px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 2px solid #b8860b;
 }
 
 h1 {
@@ -49,9 +63,11 @@ img {
     object-fit: cover;
     max-width: 350px;
     max-height: 250px;
-    border: 2px solid #000000;
-    border-radius: 5%;
+    border: 2px solid #b8860b;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     margin-bottom: 0px;
+    box-shadow: -5px 5px 5px;
 }
 
 h2 {
@@ -88,12 +104,32 @@ article {
     align-items: center;
 }
 
-article p {
+article p, .projectsList p {
     margin-bottom: 10px;
+    color: #b8860b;
+}
+
+article h2, .projectsList h2 {
+    color: #b8860b;
+    text-decoration: underline #808080;
 }
 
 .projHeader a, .aboutIntro a {
     margin: auto;
+}
+
+.aboutHead, .projHeader  {
+    background-color: #fffff0;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 2px solid #b8860b;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.projHeader {
+    margin: auto;
+    align-content: center;
 }
 
 .projHeader p {
@@ -107,6 +143,13 @@ article p {
 .skip {
     position: fixed;
     top: -40px;
+    background-color: #ffffff;
+    border-top-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+
+.skip a {
+    color: #0000ff;
 }
 
 .skip:focus {
@@ -123,7 +166,9 @@ header {
     margin: auto;
     margin-left: 10px;
     margin-top: 10px;
-    width: 75%
+    margin-bottom: 5px;
+    width: 75%;
+    background-color: #fffff0;
 }
 
 .accordion:after {
@@ -145,7 +190,8 @@ header {
 nav {
     position: relative;
     text-align: center;
-    top: 10px;
+    top: 5px;
+    margin-bottom: 15px;
     display: none;
 }
 
@@ -156,6 +202,11 @@ nav li {
     text-align: center;
 }
 
+nav li a {
+    color: #006400;
+    text-decoration: underline #b8860b;
+}
+
 .gitBlurb {
     display: none;
 }
@@ -164,8 +215,16 @@ nav li {
     padding: 10px;
 }
 
+.aboutIntro p {
+    color: #000000;
+}
+
 .pilch2 {
     display: none;
+}
+
+.projHeader {
+    max-width: 350px;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,8 +239,19 @@ nav li {
     nav {
         position: relative;
         text-align: center;
-        top: 10px;
+        top: 20px;
         display: inline;
+    }
+
+    nav ul {
+        background-color: #fffff0;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid  #b8860b;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 5px 5px 5px;
     }
 
     #homeMain {
@@ -234,6 +304,10 @@ nav li {
 
     .gitBlurb {
         display: block;
+    }
+
+    .projHeader {
+        width: 500px;
     }
 
     .projectsList {
