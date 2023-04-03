@@ -1,0 +1,396 @@
+body {
+    background-color: #024d02;
+}
+
+footer {
+    display: inline-block;
+    margin: 20px;
+}
+
+footer p {
+    border: 2px solid #b8860b;
+    padding: 5px;
+    background-color: #fffff0;
+}
+
+a {
+    margin: 10px;
+    text-decoration: underline;
+    color: #0000ff;
+    padding: 2px;
+}
+
+li {
+    display: inline;
+}
+
+.homeBio {
+    text-align: center;
+    background-color: #fffff0;
+    padding-bottom: 20px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 2px solid #b8860b;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.homeBio li {
+    display: inline;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.honor {
+    font-size: 13px;
+    padding: 10px;
+}
+
+#homeMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+/* make images right size */
+img {
+    object-fit: cover;
+    max-width: 350px;
+    max-height: 250px;
+    border: 2px solid #b8860b;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin-bottom: 0px;
+    box-shadow: -5px 5px 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.projHeader, .projectsList div, .projectsList p {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+}
+
+article {
+    text-align: center;
+}
+
+.musicPics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.climbPics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoPics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article p, .projectsList p {
+    margin-bottom: 10px;
+    color: #b8860b;
+}
+
+article h2, .projectsList h2 {
+    color: #b8860b;
+    text-decoration: underline #808080;
+}
+
+.projHeader a, .aboutIntro a {
+    margin: auto;
+}
+
+.aboutHead, .projHeader  {
+    background-color: #fffff0;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 2px solid #b8860b;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.projHeader {
+    margin: auto;
+    align-content: center;
+}
+
+.projHeader p {
+    font-size: 13px;
+}
+
+.projectsList h2 {
+    font-size: 20px;
+}
+
+.skip {
+    position: fixed;
+    top: -40px;
+    background-color: #ffffff;
+    border-top-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+
+.skip a {
+    color: #0000ff;
+}
+
+.skip:focus {
+    top: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.accordion {
+    cursor: pointer;
+    transition: 0.4s;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 75%;
+    background-color: #fffff0;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.currPage {
+    display: none;
+}
+
+nav {
+    position: relative;
+    text-align: center;
+    top: 5px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+nav li {
+    display: inline;
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: underline #b8860b;
+}
+
+.gitBlurb {
+    display: none;
+}
+
+.aboutIntro {
+    padding: 10px;
+}
+
+.aboutIntro p {
+    color: #000000;
+}
+
+.pilch2 {
+    display: none;
+}
+
+.projHeader {
+    max-width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+    .accordion {
+        display: none;
+    }
+    .currPage {
+        display: inline;
+        text-decoration: overline;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+        top: 20px;
+        display: inline;
+    }
+
+    nav ul {
+        background-color: #fffff0;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid  #b8860b;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 5px 5px 5px;
+    }
+
+    nav li a {
+        color: #006400;
+        text-decoration: underline #b8860b;
+    }
+
+    #homeMain {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .homeBio {
+        grid-column: 1 / span 3;
+    }
+
+    #homeMain img {
+        max-width: 85%;
+        max-height: 85%;
+    }
+
+    article p {
+        font-size: larger;
+    }
+
+    .aboutSections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 25px 50px;
+    }
+
+    .photos {
+        grid-column: 1 / -1;
+    }
+
+    .climbPics img {
+        flex-basis: 200px;
+        width: 170px;
+        height: 250px;;
+    }
+
+    .musicPics img {
+        flex-basis: 200px;
+    }
+
+    .musicPics, .climbPics, .photoPics {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .photos {
+        padding-top: 50px;
+    }
+
+    .gitBlurb {
+        display: block;
+    }
+
+    .projHeader {
+        width: 500px;
+    }
+
+    .projectsList {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+    }
+
+    .item1, .item2, .item3 {
+        grid-column: span 2;
+    }
+
+    .item4, .item5 {
+        grid-column: span 3;
+    }
+
+    .projectsList div {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .projectsList h2 {
+        font-size: 30px;
+    }
+
+    .projectsList p {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* For Projects page add screenshots of sample output */
+    #homeMain {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .carpPic {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    .homeBio {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
+
+    .leadPic {
+        grid-area: 2 / 3 / span 1 / span 2;
+    }
+
+    .pantryPic, .guitarPic, .sibsPic {
+        grid-column: span 2;
+    }
+    
+    .pilch2 {
+        display: inherit;
+    }
+    
+    .skip:focus {
+        top: 30px;
+        left: 350px;
+    }
+
+    .aboutSections {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .photos {
+        grid-area: 1 / 2 / span 1 / span 1;
+        grid-column: 2 / span 1;
+        padding-top: 0px;
+    }
+
+    .projectsList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item1, .item2, .item3, .item4, .item5 {
+        grid-column: span 1;
+    }
+    
+}
