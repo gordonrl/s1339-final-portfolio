@@ -6,8 +6,9 @@ footer {
 
 a {
     margin: 10px;
-    text-decoration: none;
+    text-decoration: underline;
     color: #0000ff;
+    padding: 2px;
 }
 
 li {
@@ -159,13 +160,21 @@ nav li {
     display: none;
 }
 
+.aboutIntro {
+    padding: 10px;
+}
+
+.pilch2 {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .accordion {
         display: none;
     }
     .currPage {
         display: inline;
-        text-decoration: underline;
+        text-decoration: overline;
     }
 
     nav {
@@ -229,7 +238,7 @@ nav li {
 
     .projectsList {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
         justify-content: center;
     }
 
@@ -253,16 +262,56 @@ nav li {
     .projectsList p {
         font-size: large;
     }
-
-    .eecsPic {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        width: 50%;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
     /* For Projects page add screenshots of sample output */
+    #homeMain {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .carpPic {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    .homeBio {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
+
+    .leadPic {
+        grid-area: 2 / 3 / span 1 / span 2;
+    }
+
+    .pantryPic, .guitarPic, .sibsPic {
+        grid-column: span 2;
+    }
+    
+    .pilch2 {
+        display: inherit;
+    }
+    
+    .skip:focus {
+        top: 30px;
+        left: 350px;
+    }
+
+    .aboutSections {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .photos {
+        grid-area: 1 / 2 / span 1 / span 1;
+        grid-column: 2 / span 1;
+        padding-top: 0px;
+    }
+
+    .projectsList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item1, .item2, .item3, .item4, .item5 {
+        grid-column: span 1;
+    }
+    
 }
