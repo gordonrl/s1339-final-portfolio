@@ -203,7 +203,7 @@ nav li {
 }
 
 nav li a {
-    color: #006400;
+    color: #808080;
     text-decoration: underline #b8860b;
 }
 
@@ -252,6 +252,11 @@ nav li a {
         border-top-right-radius: 20%;
         border-bottom-left-radius: 20%;
         box-shadow: 5px 5px 5px;
+    }
+
+    nav li a {
+        color: #006400;
+        text-decoration: underline #b8860b;
     }
 
     #homeMain {
