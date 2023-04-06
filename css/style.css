@@ -351,6 +351,10 @@ nav li a {
     .redact {
         display: inline;
     }
+
+    .skip:focus {
+        top: 150px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -381,8 +385,8 @@ nav li a {
     }
     
     .skip:focus {
-        top: 30px;
-        left: 350px;
+        top: 60px;
+        left: 300px;
     }
 
     .aboutSections {
