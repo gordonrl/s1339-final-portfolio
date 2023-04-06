@@ -28,3 +28,21 @@ document.querySelector(".unRedact").addEventListener("click", function() {
 
   this.style.display = "none";
 })//unRedact
+
+document.querySelector(".flow").addEventListener("click", function() {
+  document.body.className = "flowify";
+
+  document.querySelector(".unFlow").style.display = "inline";
+  document.querySelector(".unFlow").style.fontFamily = "Arial, Helvetica, sans-serif";
+
+  this.style.display = "none";
+})//flow
+
+document.querySelector(".unFlow").addEventListener("click", function() {
+  document.body.className = "";
+
+  document.querySelector(".flow").style.display = "inline";
+  document.querySelector(".flow").style.fontFamily = "Arial, Helvetica, sans-serif";
+
+  this.style.display = "none";
+})//unFlow
