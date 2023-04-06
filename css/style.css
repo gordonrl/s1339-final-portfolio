@@ -168,25 +168,19 @@ header {
 
 .accordion {
     cursor: pointer;
-    transition: 0.4s;
-    margin: auto;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 75%;
-    background-color: #fffff0;
+    margin: 10px auto 5px auto;
+    width: auto;
+    background-color: #fffff0
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+    color: #fffff0;
 }
   
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
 }
 
 .currPage {
@@ -197,7 +191,7 @@ nav {
     position: relative;
     text-align: center;
     top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: none;
 }
 
