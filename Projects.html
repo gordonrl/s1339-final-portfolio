@@ -17,10 +17,19 @@
                 alert("Please Note: The University of Michigan Engineering Honor Code requires that class projects are made private on GitHub. Please email me at gordonrl@umich.edu if you would like to see one of these projects and I can contact the engineering department.");
             }
         }
+
+        function checkPriv() {
+            if (window.innerWidth >= 768) {
+            let projNames = document.querySelector(".projectsList").getElementsByClassName("proj");
+                for (i = 1; i < projNames.length; i++) {
+                projNames[i].innerHTML += " (Private)";
+                }
+            }
+        }
     </script>
     <title>Projects</title>
 </head>
-<body id="projects">
+<body id="projects" onload="checkPriv()">
     <a class="skip" tabindex="0" href="#projectsMain">Skip to Main Content</a>
 
     <header>
@@ -38,32 +47,32 @@
         <div class="projHeader">
             <h1>Projects</h1>
             <a href="https://github.com/gordonrl" target="_blank" onclick="checkBlurb()">GitHub</a>
-            <p class="gitBlurb">Please Note: The University of Michigan Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf" target="_blank">Honor Code</a> requires that class projects are made private on GitHub. Please <a href=mailto:gordonrl@umich.edu>email me</a> if you would like to see one of these projects and I can contact the engineering department. An asterix (*) denotes a private project.</p>
+            <p class="gitBlurb">Please Note: The University of Michigan Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf" target="_blank">Honor Code</a> requires that class projects are made private on GitHub. Please <a href=mailto:gordonrl@umich.edu>email me</a> if you would like to see one of these projects and I can contact the engineering department. </p>
         </div>
         
         <div class="projectsList">
             <div class="item1">
-                <h2>Theory Helper</h2>
+                <h2 class="proj">Theory Helper</h2>
                 <p>Desktop application that explains music theory via user-inputted chords.</p>
             </div>
 
             <div class="item2">
-                <h2>Machine Learning*</h2>
+                <h2 class="proj">Machine Learning</h2>
                 <p>Developed ML model to predict the category/topic of student questions from an online forum.</p>
             </div>
 
             <div class="item3">
-                <h2>Stock Market Simulator*</h2>
+                <h2 class="proj">Stock Market Simulator</h2>
                 <p> Reskinned simulation of buying and selling stocks including a streaming algorithm to determine optimal buying and selling points.</p>
             </div>
 
             <div class="item4">
-               <h2>Computer Vision*</h2>
+               <h2 class="proj">Computer Vision</h2>
                <p>Intelligently resized images to avoid distortion via a seam-carving algorithm.</p>
             </div>
 
             <div class="item5">
-                <h2>Relational Database*</h2>
+                <h2 class="proj">Relational Database</h2>
                 <p>Simplified relational database able to respond to Structured Query Language commands.</p>
             </div>
         </div>
