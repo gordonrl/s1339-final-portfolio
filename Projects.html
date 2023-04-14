@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        let blurbShown = false; //makes it so blurb is only shown once -- reduces redundancy
         function checkBlurb() {
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 768 && !blurbShown) {
+                blurbShown = true;
+
                 alert("Please Note: The University of Michigan Engineering Honor Code requires that class projects are made private on GitHub. Please email me at gordonrl@umich.edu if you would like to see one of these projects and I can contact the engineering department.");
             }
         }
@@ -55,6 +58,7 @@
             <div class="item1">
                 <h2 class="proj">Theory Helper</h2>
                 <p>Desktop application that explains music theory via user-inputted chords.</p>
+                <a href="https://github.com/gordonrl/theory-helper">Theory Helper Code</a>
             </div>
 
             <div class="item2">
@@ -78,7 +82,7 @@
             </div>
         </div>
 
-        <div class="eecs"><img src="images/declared.png" alt="Boy giving a thumbs up wearing shirt that says M Computer Science"></div>
+        <div class="eecs"><img src="images/declared.png" alt="Boy giving a thumbs up wearing shirt that says M Computer Science" tabindex="0"></div>
 
     </main> 
 

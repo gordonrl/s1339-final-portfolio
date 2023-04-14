@@ -30,6 +30,14 @@ a {
     padding: 2px;
 }
 
+a:focus, button:focus {
+    border: 1px dotted #ff0000;
+}
+
+img:focus {
+    border: 10px solid #ff00ff;
+}
+
 li {
     display: inline;
 }
@@ -116,12 +124,17 @@ article {
 
 article p, .projectsList p {
     margin-bottom: 10px;
-    color: #b8860b;
+    color: burlywood
 }
 
 article h2, .projectsList h2 {
     color: #b8860b;
     text-decoration: underline #808080;
+}
+
+.item1 a {
+    background-color: ivory;
+    border: 2px solid #b8860b;
 }
 
 .projHeader a, .aboutIntro a {
