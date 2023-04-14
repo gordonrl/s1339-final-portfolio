@@ -262,6 +262,10 @@ nav li a {
 }
 
 @media screen and (min-width: 768px) {
+    .projectsList {
+        flex-direction: row;
+    }
+
     .accordion {
         display: none;
     }
